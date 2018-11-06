@@ -536,7 +536,7 @@ namespace Valve.VR
             for (int childIndex = 0; childIndex < t.childCount; childIndex++)
             {
                 var child = t.GetChild(childIndex);
-                child.gameObject.SetActive(false);
+                //child.gameObject.SetActive(false);
                 StripMesh(child.gameObject);
             }
 

@@ -150,6 +150,8 @@ namespace Valve.VR
 
         protected virtual void UpdateSkeleton()
         {
+
+
             if (skeletonAction == null || skeletonAction.GetActive(inputSource) == false)
                 return;
 
