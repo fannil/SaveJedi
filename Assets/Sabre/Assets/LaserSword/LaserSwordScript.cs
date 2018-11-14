@@ -88,7 +88,8 @@ namespace DigitalRuby.LaserSword
         private void UpdateBlade()
         {
             float distance = Vector3.Distance(BladeEnd.transform.position, BladeStart.transform.position);
-            float percent = distance / creationScript.BladeHeight;
+           // float percent = distance / creationScript.BladeHeight;
+            float percent = 45.0f;
             Blade.transform.localScale = new Vector3(1.0f, percent, 1.0f);
             if (percent < 0.01f)
             {
@@ -98,12 +99,12 @@ namespace DigitalRuby.LaserSword
             else
             {
                 Blade.SetActive(true);
-                BladeGlow.gameObject.SetActive(true);
+                BladeGlow.gameObject.SetActive(false);
             }
             BladeGlow.SetColors(new Color(1.0f, 1.0f, 1.0f, bladeIntensity), new Color(1.0f, 1.0f, 1.0f, bladeIntensity));
-            BladeGlow.SetPosition(0, BladeStart.transform.position - (Root.transform.up * creationScript.BladeHeight * 0.075f));
+            BladeGlow.SetPosition(0, BladeStart.transform.position - (Root.transform.up * /*creationScript.BladeHeight*/-15.0f * 0.075f));
             BladeGlow.SetPosition(1, BladeEnd.transform.position);
-            Light.intensity = percent;
+            Light.intensity = 1.0f;
         }
 
         private void Start()

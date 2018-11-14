@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changeTolerance: 0.000001
   fullPath: /actions/default/in/SkeletonLeftHand
-  actionSet: {fileID: 11400000, guid: 49ae5f5958b034545bc8e8b80ec245c0, type: 2}
+  actionSet: {fileID: 11400000, guid: 56e63ab7246e4044d88a1521e1e23489, type: 2}
   direction: 0
